@@ -10,7 +10,7 @@ function setup() {
   socket.on('mouse',
     function(data) {
       console.log("Got: " + data.x + " " + data.y);
-      fill(0, 0, 255);
+      fill(0, 255, 0);
       noStroke();
       ellipse(data.x, data.y, 20, 20);
     }
@@ -21,7 +21,7 @@ function draw() {
 }
 
 function mouseDragged() {
-  fill(255, 0, 0);
+  fill(128 , 0, 128);
   noStroke();
   ellipse(mouseX, mouseY, 20, 20);
   
